@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {{! Document Settings }}
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    {{! Page Meta }}
+    <title>
+    {{meta_title}}{{#is "post"}} | {{@blog.title}}{{/is}}
+    </title>
+
+    {{! Page Meta }}
+    {{{block "meta"}}}
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="{{asset "favicon.ico"}}">
+
+    {{! Styles'n'Scripts }}
+    <!--<link rel="stylesheet" type="text/css" href="{{asset "css/screen.css"}}" />-->
+    {{! Added Bootstrap }}
+    <link href="https://fonts.googleapis.com/css?family=Roboto:700" rel="stylesheet">
+    <link rel="stylesheet" href="{{asset "https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"}}" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"/>
+    <link rel="stylesheet" href="{{asset "css/styles.css"}}">
+
+
+    {{! Ghost outputs important style and meta data with this tag }}
+    {{ghost_head}}
+
+<!-- Google Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-40547934-3', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<script src="{{asset "https://code.jquery.com/jquery-3.3.1.slim.min.js"}}" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="{{asset "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"}}" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="{{asset "https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"}}" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="{{asset "js/script.js"}}"></script>
+<script src="{{asset "https://suryad.com/templatev2.js"}}"></script>
+
+
+    {{! Add all code style here }}
+    <!--<link rel="stylesheet" href="{{asset "css/default.css"}}">-->
+
+
+  {{! Page Highlight }}
+  {{{block "initHighlight"}}}
+
+
+</head>
+<body>
+{{#is "home"}}
+{{/is}}
+<div >
+{{> "navbar"}}
+</div>
+<div class=>
+    {{{body}}}
+</div>
+
+
+
+
+
+<dt-footer><div class="l-page"><div class="description"><a class="logo" href="/">Surya Dantuluri</a> writes articles on Machine Learning, Full Stack Development, and Insightful Topics</div><div class="nav"><a href="https://blog.suryad.com/about">About</a><a href="https://suryad.com">Main Website</a><a href="https://github.com/dantuluri">GitHub</a><a href="https://twitter.com/dantuluri02">Twitter</a>      Monta Vista High School</div></div></dt-footer>
+
+
+
+
+    <a href="#" class="back-to-top"><span class="fa fa-angle-up fa-2x"></span></a>
+
+    {{! Ghost outputs important scripts and data with this tag }}
+    {{ghost_foot}}
+
+    {{! The main JavaScript file for Casper }}
+
+</body>
+</html>
