@@ -1,23 +1,29 @@
+# Coder Ghost Theme
 
-# Coder Ghost Theme for Showcasing Projects
-Open sourcing the Coder Ghost theme. The coder ghost theme was built to show case my open source projects. The theme is packed with the following features :  
+A Ghost Theme that is similar to Distill.pub's style
 
-- mobile friendly
-- beautiful syntax highlighting
-- elusive icon set
-- stunning typography
-- thumbnail per post
-- seo optimized titles
-- works with Ghost Engine ^1.0
+## Getting Started
 
+* You'll need to have NGINX set-up on your server.
+* You'll need to have Ghost up and running
 
-## Installation 
-Goto the Github and download the repository zip archive and extract its contents. Change the contact urls in the `partials/navbar.hbs` file to your own and archive the contents. Upload the archive to your Ghost CMS. 
+### Prerequisites
 
+Handlebars knowledge
 
-![](https://www.mbejda.com/content/images/2015/12/download--2-.png#400)
-<hr>
-If you need support send me a tweet at <br>
-Twitter: [@notmilosbejda](https://twitter.com/notmilobejda)<br>
-Blog: [www.mbejda.com](https://github.com/mbejda/CoderGhostTheme)<br>
-Github: https://github.com/mbejda/CoderGhostTheme
+### Installing
+
+```
+wget https://github.com/dantuluri/coder-ghost-theme/archive/master.zip
+```
+Change the Handlebars files to customize!
+
+You'll be set!
+
+## Authors
+
+* **Surya Dantuluri** - *Initial work* - [dantuluri](https://github.com/dantuluri)
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
