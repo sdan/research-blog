@@ -1,4 +1,4 @@
-# Coder Ghost Theme
+# Research Blog Theme
 
 A Ghost Theme that is similar to Distill.pub's style
 
