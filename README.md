@@ -18,6 +18,8 @@ wget https://github.com/dantuluri/coder-ghost-theme/archive/master.zip
 ```
 Change the Handlebars files to customize!
 
+Zip your local directory and upload to Ghost
+
 You'll be set!
 
 ## Authors
