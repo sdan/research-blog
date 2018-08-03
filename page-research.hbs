@@ -1,0 +1,54 @@
+{{!< default}}
+
+{{! The comment above "< default" means - insert everything in this file into
+    the {body} of the default.hbs template, which contains our header/footer. }}
+
+<link rel="stylesheet" href="{{asset "css/styles.css"}}">
+
+{{! Everything inside the #post tags pulls data from the post }}
+{{#post}}
+
+{{#contentFor "initHighlight"}}
+    <script>hljs.initHighlightingOnLoad();</script>
+{{/contentFor}}
+
+<meta charset="utf-8">
+<script src="https://suryad.com/templatev2.js"></script>
+
+<script type="text/front-matter">
+  title:  "{{title}}"
+  description: "{{excerpt}}"
+</script>
+
+
+<dt-article>
+  <h3 style="grid-column: text/page;">
+      <div class="pushback">
+      <strong>{{title}}</strong>
+  </div>
+
+</h3>
+  <dt-byline></dt-byline>
+
+  {{content}}
+
+
+  <!-- <p>This is the first paragraph of the article.</p>
+  <p>We can also cite <dt-cite key="gregor2015draw"></dt-cite> external publications.</p> -->
+</dt-article>
+
+<dt-appendix>
+</dt-appendix>
+
+<script type="text/bibliography">
+  @article{gregor2015draw,
+    title={DRAW: A recurrent neural network for image generation},
+    author={Gregor, Karol and Danihelka, Ivo and Graves, Alex and Rezende, Danilo Jimenez and Wierstra, Daan},
+    journal={arXivreprint arXiv:1502.04623},
+    year={2015},
+    url={https://arxiv.org/pdf/1502.04623.pdf}
+  }
+</script>
+
+
+{{/post}}

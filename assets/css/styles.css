@@ -7,6 +7,11 @@
   font-weight: 700;
 }
 
+.thecenter{
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .pushback{
     margin-left: -5px;
 }
@@ -1060,11 +1065,11 @@ dt-header .logo {
   font-size: 17px;
   font-weight: 200;
 }
-dt-header .nav {
+dt-header .navy{
   float: right;
   font-weight: 300;
 }
-dt-header .nav a {
+dt-header .navy a {
   font-size: 12px;
   margin-left: 24px;
   text-transform: uppercase;
@@ -1129,10 +1134,10 @@ dt-footer .logo {
   text-decoration: none;
   margin-right: 6px;
 }
-dt-footer .nav {
+dt-footer .navy{
   margin-top: 12px;
 }
-dt-footer .nav a {
+dt-footer .navy a {
   color: rgba(255, 255, 255, 0.8);
   margin-right: 6px;
 }
