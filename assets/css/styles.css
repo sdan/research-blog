@@ -216,6 +216,7 @@ dt-article > h4,
 dt-article > figure,
 dt-article > table,
 dt-article > ol,
+dt-article > blockquote,
 dt-article > ul,
 dt-article > dt-byline,
 dt-article > dt-math,
@@ -227,6 +228,7 @@ dt-article section > h2,
 dt-article section > h3,
 dt-article section > h4,
 dt-article section > figure,
+dt-article section > blockquote,
 dt-article section > table,
 dt-article section > ol,
 dt-article section > ul,
@@ -254,12 +256,14 @@ dt-article section > dt-code {
   dt-article > figure,
   dt-article > table,
   dt-article > ol,
+  dt-article > blockquote,
   dt-article > ul,
   dt-article > dt-byline,
   dt-article > dt-math,
   dt-article > dt-code,
   dt-article section > div,
   dt-article section > p,
+  dt-article section > blockquote
   dt-article section > h1,
   dt-article section > h2,
   dt-article section > h3,
@@ -279,6 +283,7 @@ dt-article section > dt-code {
   .l-body,
   dt-article > div,
   dt-article > p,
+  dt-article > blockquote,
   dt-article > h2,
   dt-article > h3,
   dt-article > h4,
@@ -297,6 +302,7 @@ dt-article section > dt-code {
   dt-article section > figure,
   dt-article section > table,
   dt-article section > ol,
+  dt-article section > blockquote,
   dt-article section > ul,
   dt-article section > dt-byline,
   dt-article section > dt-code {
@@ -430,6 +436,7 @@ dt-article section > dt-code {
   dt-article.centered > dt-code,
   dt-article.centered section > div,
   dt-article.centered section > p,
+  dt-article.centered section > blockquote,
   dt-article.centered section > h2,
   dt-article.centered section > h3,
   dt-article.centered section > h4,
@@ -442,6 +449,7 @@ dt-article section > dt-code {
   dt-article section.centered > div,
   dt-article section.centered > p,
   dt-article section.centered > h2,
+  dt-article section.centered > blockquote,
   dt-article section.centered > h3,
   dt-article section.centered > h4,
   dt-article section.centered > figure,
@@ -629,6 +637,16 @@ dt-article h2 {
   line-height: 1.25em;
   margin-top: 36px;
   margin-bottom: 24px;
+}
+
+blockquote {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.25em;
+  margin-top: 66px;
+  margin-bottom: 66px;
+
 }
 
 @media(min-width: 1024px) {
