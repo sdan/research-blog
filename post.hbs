@@ -14,8 +14,10 @@
 
 <meta charset="utf-8">
 
-<script src="../assets/js/t4.js"></script>
+<script src="https://sdan.cc/assets/js/t4.js"></script>
 
+<link href="https://sdan.cc/prism.css" rel="stylesheet" />
+<script src="https://sdan.cc/prism.js"></script>
 
 
 <script type="text/front-matter">
@@ -23,10 +25,10 @@
   description: "{{excerpt}}"
   authors:
   - Surya Dantuluri: https://suryad.com
-  - PGP Clearsigned Signature: https://data.suryad.com/pgp{{url}}c.txt
+  - PGP Clearsigned Signature: https://sdan.cc/pgp{{url}}c.txt
   affiliations:
   - Monta Vista High School
-  - PGP Detached Signature: https://data.suryad.com/pgp{{url}}d.txt
+  - PGP Detached Signature: https://sdan.cc/pgp{{url}}d.txt
 
 </script>
 
@@ -48,40 +50,14 @@
   <p>We can also cite <dt-cite key="gregor2015draw"></dt-cite> external publications.</p> -->
 </dt-article>
 
-<dt-appendix>
-    <div id="disqus_thread"></div>
-    <script>
+<div class="commento"> 
+<div class="l-body">
 
-    /**
-    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+<div id="commento"></div>
+<script src="https://habla.suryad.com/js/commento.js"></script>
 
-    var disqus_config = function () {
-    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-    this.page.identifier = "ghost-{{comment_id}}"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-    };
-
-    (function() { // DON'T EDIT BELOW THIS LINE
-    var d = document, s = d.createElement('script');
-    s.src = 'https://dantuluri.disqus.com/embed.js';
-    s.setAttribute('data-timestamp', +new Date());
-    (d.head || d.body).appendChild(s);
-    })();
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-
-
-</dt-appendix>
-
-<script type="text/bibliography">
-  @article{gregor2015draw,
-    title={DRAW: A recurrent neural network for image generation},
-    author={Gregor, Karol and Danihelka, Ivo and Graves, Alex and Rezende, Danilo Jimenez and Wierstra, Daan},
-    journal={arXivreprint arXiv:1502.04623},
-    year={2015},
-    url={https://arxiv.org/pdf/1502.04623.pdf}
-  }
-</script>
+</div>
+</div>
 
 
 {{/post}}
