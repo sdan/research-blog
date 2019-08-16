@@ -1,7 +1,7 @@
 # Research Blog
 A Ghost Theme that is similar to Distill.pub's style
 
-![https://sdan.cc/assets/images/blgfinal.png](Surya Dantuluri's Blog)
+![Surya Dantuluri's Blog](https://sdan.cc/assets/images/blgfinal.png)
 
 ## Installing
 
