@@ -1,0 +1,13 @@
+name: CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Deploy Ghost Theme
+      uses: TryGhost/action-deploy-theme@v1.0.1
+
