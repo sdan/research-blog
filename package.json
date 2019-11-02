@@ -1,5 +1,5 @@
 {
-  "name": "coder-ghost-theme",
+  "name": "research-blog-theme",
   "version": "2.0.2",
   "engines": {
     "ghost": "^1.0.0"
@@ -23,7 +23,7 @@
   "license": "MIT",
   "author": {
     "name": "Research Blog",
-    "email": "blog@sdan.xyz",
+    "email": "blog@sdan.cc",
     "url": "https://suryad.com"
   },
   "demo": "https://blog.suryad.com",
